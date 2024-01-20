@@ -4,3 +4,7 @@ const router = express.Router();
 let notes = [];
 
 //get route to get all of the notes
+router.get('/notes', (req,res) => {
+    res.json(notes);
+});
+
