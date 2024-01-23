@@ -36,6 +36,7 @@ This week I created a note taking application that allows users to create new no
 ![!\[Alt text\]](assets/create%20new.png)
 8. Lastly you can delete your notes by clicking the trash icon next to your saved notes
 ![!\[Alt text\]](assets/delete.png)
+
 <!-- CONTRIBUTING -->
 ## Contributing
 
