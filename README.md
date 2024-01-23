@@ -23,19 +23,19 @@ This week I created a note taking application that allows users to create new no
 1. Start by clicking on "Get Started'
 ![Get Started](./Assets/get%20started.png)
 2. To make a textnew note, click on "New Note" and enter in your note title. 
-![!\[Alt text\]](assets/Note%20Title.png)
+![!\[Alt text\]](./Assets/Note%20Title.png)
 3. Type note into "Note Text"
-![!\[Alt text\]](assets/Note%20Text.png)
+![!\[Alt text\]](./Assets/Note%20Text.png)
 4. To save your note hit "Save Note" on the top right corner
-![!\[Alt text\]](assets/save%20note.png)
+![!\[Alt text\]](./Assets/save%20note.png)
 5. To start over you can hit "Clear Form" on the top right
-![!\[Alt text\]](assets/Clear%20form.png)
+![!\[Alt text\]](./Assets/Clear%20form.png)
 6. You can look to the left and click on other notes that you have saved
-![!\[Alt text\]](assets/saved%20notess.png)
+![!\[Alt text\]](./Assets/saved%20notess.png)
 7. You can also create a new note by clicking "New Note" on the top right
-![!\[Alt text\]](assets/create%20new.png)
+![!\[Alt text\]](./Assets/create%20new.png)
 8. Lastly you can delete your notes by clicking the trash icon next to your saved notes
-![!\[Alt text\]](assets/delete.png)
+![!\[Alt text\]](./Assets/delete.png)
 
 <!-- CONTRIBUTING -->
 ## Contributing
