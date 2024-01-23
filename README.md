@@ -21,7 +21,7 @@ This week I created a note taking application that allows users to create new no
 
 ## Note Taker: "How To" Step by Step! <!--or application steps to each their own -->
 1. Start by clicking on "Get Started'
-![Get Started](assets/get%20started.png)
+![Get Started](./Assets/get%20started.png)
 2. To make a textnew note, click on "New Note" and enter in your note title. 
 ![!\[Alt text\]](assets/Note%20Title.png)
 3. Type note into "Note Text"
