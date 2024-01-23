@@ -1,23 +1,44 @@
-const express = require('express');
-const router = express.Router();
+const notes = require('express').Router();
+const fs = require('fs');
+const uuid = require('uuid');
 
-let notes = [];
+
 
 //get route to get all the notes
-router.get('/', (req, res) => {
-    res.json(notes);
+notes.get('/', (req, res)=> {
+    let notesData = fs.readFileSync("./db/db.json", "utf8");
+    notesData = JSON.parse(notesData);
+    res.json(notesData);
 });
 
 //post route to add a new note
-router.post('/', (req, res) =>{
+notes.post('/', (req, res) =>{
     const {title, text} = req.body;
 
-    if (title && text) {
-        const newNote = { title, text};
-        notes.push(newNote);
-        res.json(newNote);
+    if (req.body) {
+        const newNote = { 
+            title, 
+            text,
+            id: uuid.v4(),
+        };
+        let notesData = fs.readFileSync("./db/db.json", "utf8");
+        notesData.push(newNote);
+        fs.writeFileSync('./db/db.json', JSON.stringify(notesData), 'utf8');
+        res.json('note was added');
     } else {
-        res.status(400).json({error:'Title and texts are required!'});
+        res.error('error when adding note');
     }
 });
 
+//delete route to delete a note by index
+notes.delete('/:id', (req, res)=>{
+    let notesData = fs.readFileSync("./db/db.json", "utf8");
+    notesData = JSON.parse(notesData);
+
+    const filteredNotes = notesData.filter((note) => req.params.id !== note.id)
+    fs.writeFileSync('./db/db.json', JSON.stringify(notesData), 'utf8');
+    res.json('note was deleted');
+   
+});
+
+module.exports = notes;
